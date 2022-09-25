@@ -5,6 +5,7 @@
 
 body {
     overflow: hidden;
+    animation: sheakBody linear 6s infinite;
 }
 
 .sky {
@@ -13,6 +14,7 @@ body {
     background-image: url(background.jpg);
     background-repeat: no-repeat;
     position: absolute;
+    top: -50px;
 }
 
 .trees {
@@ -84,5 +86,17 @@ body {
     }
     100% {
         transform: translateY(-5px);
+    }
+}
+
+@keyframes sheakBody {
+    0% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(-50px);
     }
 }
